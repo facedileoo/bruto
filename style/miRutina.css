@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#020b3a;
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+header{
+text-align:center;
+padding:20px;
+font-size:20px;
+}
+
+
+main{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:30px;
+padding:20px;
+}
+
+
+/* CONTENEDOR DIAS */
+
+.contenedorRutina{
+width:90%;
+max-width:800px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+
+/* TARJETA DIA */
+
+.dia{
+background:rgba(255,255,255,0.07);
+padding:20px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.dia h3{
+color:#5ed0ff;
+}
+
+
+/* EJERCICIO */
+
+.ejercicio{
+background:rgba(0,0,0,0.3);
+padding:10px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:5px;
+}
+
+
+/* BOTON AGREGAR EJERCICIO */
+
+.addEjercicio{
+background:#0b4ca3;
+border:none;
+padding:8px;
+border-radius:10px;
+cursor:pointer;
+color:white;
+}
+
+.addEjercicio:hover{
+background:#1c6ed5;
+}
+
+
+/* BOTON AÑADIR DIA */
+
+.btnAgregarDia{
+
+padding:12px;
+border-radius:30px;
+border:none;
+background:#0d5eff;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.btnAgregarDia:hover{
+background:#2974ff;
+}
+
+
+/* ENTRENAMIENTO */
+
+.entrenamiento{
+display:flex;
+gap:20px;
+padding-bottom: 40px;
+}
+
+.btnStart{
+
+background:#00c853;
+border:none;
+padding:12px 20px;
+border-radius:20px;
+color:white;
+cursor:pointer;
+
+}
+
+.btnStop{
+
+background:#d50000;
+border:none;
+padding:12px 20px;
+border-radius:20px;
+color:white;
+cursor:pointer;
+
+}
+
+
+/* FOOTER */
+
+footer{
+position:fixed;
+bottom:10px;
+left:50%;
+transform:translateX(-50%);
+background:black;
+padding:10px 25px;
+border-radius:25px;
+}
+
+footer nav{
+display:flex;
+gap:20px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.headerDia{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.eliminarDia{
+background:#ff3b3b;
+border:none;
+color:white;
+font-size:14px;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.eliminarDia:hover{
+background:#d90000;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+.dia{
+padding:15px;
+}
+
+}
