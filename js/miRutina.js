@@ -35,6 +35,8 @@ const listaEjercicios = [
   "Press de banca con barra",
   "Press de banca con mancuernas",
   "Press de banca en máquina",
+  "Press de banca en máquina smith",
+  "Press inclinado en maquina smith",
   "Press inclinado con barra",
   "Press inclinado con mancuernas",
   "Press inclinado en máquina",
@@ -124,6 +126,7 @@ const listaEjercicios = [
   "Curl 21",
   "Chin ups",
   "Curl en banco Scott",
+  "Curl bayesian",
 
   /* TRICEPS */
   "Fondos en paralelas",
@@ -140,6 +143,7 @@ const listaEjercicios = [
   "Patada de tríceps con mancuerna",
   "Patada de tríceps en polea",
   "Extensión en máquina",
+  "Rompecráneos con barra",
 
   /* ANTEBRAZO */
   "Curl de muñeca con barra",
