@@ -1,14 +1,6 @@
-/* RESET */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /* FONDO GENERAL */
 body{
-    background: linear-gradient(135deg,#020b3a,#061a6b,#0a2c8b);
+    background: linear-gradient(135deg,#0a0a0a,#1a1a1a,#202020);
     color:white;
     min-height:100vh;
     display:flex;

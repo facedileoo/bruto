@@ -203,6 +203,9 @@ ejercicios.forEach((ej, index) => {
     crearSerie(seriesContainer, null);
   };
 
+  // agregar clase
+  btn.classList.add("agregarSerieBtn");
+
   card.appendChild(btn);
 });
 

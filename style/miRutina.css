@@ -1,13 +1,4 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-background:#020b3a;
-color:white;
 min-height:100vh;
 display:flex;
 flex-direction:column;
@@ -55,53 +46,74 @@ gap:15px;
 }
 
 .dia h3{
-color:#5ed0ff;
+color:#EEEEEE;
 }
 
 
 /* EJERCICIO */
 
 .ejercicio{
-background:rgba(0,0,0,0.3);
+background:rgba(0, 0, 0, 0.87);
 padding:10px;
 border-radius:10px;
 display:flex;
 flex-direction:column;
 gap:5px;
+margin-bottom: 10px;
 }
 
 
 /* BOTON AGREGAR EJERCICIO */
 
 .addEjercicio{
-background:#0b4ca3;
-border:none;
-padding:8px;
-border-radius:10px;
-cursor:pointer;
-color:white;
+    background:#363636;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    padding:8px;
+    cursor:pointer;
+    color:#fff;
+    transition: .5s;
 }
 
 .addEjercicio:hover{
-background:#1c6ed5;
+background:#252525;
 }
+
+.eliminarEjercicio{
+    background:#ff3b3b;
+    border:none;
+    color:white;
+    font-size:14px;
+    padding: 5px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.5s;
+    margin: auto;
+    transition: 1s;
+}
+
+.eliminarEjercicio:hover{
+    background:#d90000;
+}
+
 
 
 /* BOTON AÑADIR DIA */
 
 .btnAgregarDia{
-
-padding:12px;
-border-radius:30px;
-border:none;
-background:#0d5eff;
-color:white;
-font-size:16px;
-cursor:pointer;
+    background:#303030;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    padding: 20px;
+    cursor:pointer;
+    color:#fff;
+    transition: .5s;
 }
 
 .btnAgregarDia:hover{
-background:#2974ff;
+background:#1b1b1b;
 }
 
 
@@ -113,11 +125,11 @@ gap:20px;
 padding-bottom: 40px;
 }
 
-.btnStart{
+.btnStartDia{
 
 background:#00c853;
 border:none;
-padding:12px 20px;
+padding:5px 10px;
 border-radius:20px;
 color:white;
 cursor:pointer;
@@ -135,6 +147,15 @@ cursor:pointer;
 
 }
 
+#volverEntreno{
+    background:#00c853;
+    border:none;
+    padding:5px 10px;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    margin: 10px;
+}
 
 /* FOOTER */
 
@@ -161,8 +182,8 @@ font-size:14px;
 
 .headerDia{
 display:flex;
-justify-content:space-between;
 align-items:center;
+gap:10px;
 }
 
 .eliminarDia{
@@ -170,10 +191,11 @@ background:#ff3b3b;
 border:none;
 color:white;
 font-size:14px;
-padding:6px 10px;
+padding: 5px;
 border-radius:6px;
 cursor:pointer;
-transition:0.2s;
+transition:0.5s;
+margin-left: auto;
 }
 
 .eliminarDia:hover{

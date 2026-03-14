@@ -24,7 +24,7 @@ border-bottom:1px solid #222;
 
 .header button{
 
-background:#00c896;
+background:#ff3b3b;
 
 border:none;
 
@@ -122,6 +122,30 @@ border-radius:8px;
 
 }
 
+.deleteSerie{
+    background:#ff3b3b;
+    border:none;
+    color:white;
+    font-size:14px;
+    padding: 5px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.5s;
+    margin: auto;
+}
+
+.agregarSerieBtn{
+    background:#00c853;
+    border:none;
+    color:white;
+    font-size:14px;
+    padding: 5px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.5s;
+    margin: auto;
+}
+
 .bottomNav{
 
 position:fixed;
@@ -146,11 +170,13 @@ gap:20px;
 
 .bottomNav a{
 
-color:white;
+color:#ffffff;
 
 text-decoration:none;
 
 font-size:14px;
+
+text-align: center;
 
 }
 

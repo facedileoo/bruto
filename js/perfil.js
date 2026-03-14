@@ -13,12 +13,12 @@ RUTINA DE ENTRENAMIENTO
 ----------------------------- */
 
 let rutina = {
-  Lunes: 45,
-  Martes: 40,
-  Miercoles: 50,
-  Jueves: 40,
-  Viernes: 60,
-  Sabado: 30,
+  Lunes: 90,
+  Martes: 90,
+  Miercoles: 90,
+  Jueves: 90,
+  Viernes: 90,
+  Sabado: 90,
   Domingo: 0,
 };
 
@@ -67,11 +67,24 @@ function mostrarEntreno() {
 MOSTRAR USUARIO
 ----------------------------- */
 
-function mostrarUsuario() {
-  let nombre = document.querySelector(".user h2");
+const username = document.getElementById("username");
 
-  nombre.innerText = usuario.nombre;
+// cargar nombre guardado
+const savedName = localStorage.getItem("username");
+
+if (savedName) {
+  username.textContent = savedName;
 }
+
+// cambiar nombre al hacer click
+username.onclick = () => {
+  const nuevoNombre = prompt("Escribí tu nombre de usuario:");
+
+  if (nuevoNombre) {
+    username.textContent = nuevoNombre;
+    localStorage.setItem("username", nuevoNombre);
+  }
+};
 
 /* -----------------------------
 OBJETIVO
@@ -313,7 +326,6 @@ INICIAR APP
 ===================================================== */
 
 function iniciar() {
-  mostrarUsuario();
   mostrarEntreno();
   mostrarObjetivo();
   mostrarRacha();
